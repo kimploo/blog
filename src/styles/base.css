@@ -30,14 +30,10 @@
   html[data-theme="dark"] #sun-svg {
     display: block;
   }
-  .notosanskr * { 
-    font-family: 'Noto Sans KR', sans-serif;
-  } 
+  .notosanskr * {
+    font-family: "Noto Sans KR", sans-serif;
+  }
   body {
-    /* font-family: "Noto Sans", sans-serif; */
-
-    /* font-family: "Noto Sans Korean", sans-serif; */
-    
     @apply flex min-h-[100svh] flex-col bg-skin-fill font-sans text-skin-base 
     selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted;
   }
