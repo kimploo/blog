@@ -5,7 +5,7 @@ export default (post: CollectionEntry<"blog">) => {
   return (
     <div
       style={{
-        background: "#fefbfb",
+        background: "rgb(20, 21, 26)",
         width: "100%",
         height: "100%",
         display: "flex",
@@ -18,22 +18,21 @@ export default (post: CollectionEntry<"blog">) => {
           position: "absolute",
           top: "-1px",
           right: "-1px",
-          border: "4px solid #000",
-          background: "#ecebeb",
+          border: "3px solid rgb(234, 237, 243)",
+          background: "rgb(20, 21, 26)",
           opacity: "0.9",
           borderRadius: "4px",
-          display: "flex",
+          display: "none",
           justifyContent: "center",
           margin: "2.5rem",
           width: "88%",
           height: "80%",
         }}
       />
-
       <div
         style={{
-          border: "4px solid #000",
-          background: "#fefbfb",
+          border: "3px solid rgb(20, 21, 26)",
+          background: "rgb(20, 21, 26)",
           borderRadius: "4px",
           display: "flex",
           justifyContent: "center",
@@ -44,6 +43,7 @@ export default (post: CollectionEntry<"blog">) => {
       >
         <div
           style={{
+            color: "rgb(234, 237, 243)",
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
@@ -68,25 +68,35 @@ export default (post: CollectionEntry<"blog">) => {
               justifyContent: "space-between",
               width: "100%",
               marginBottom: "8px",
-              fontSize: 28,
+              paddingBottom: "8px",
+              fontSize: 30,
             }}
           >
             <span>
-              by{" "}
               <span
                 style={{
                   color: "transparent",
                 }}
-              >
-                "
-              </span>
-              <span style={{ overflow: "hidden", fontWeight: "bold" }}>
-                {post.data.author}
-              </span>
+              ></span>
             </span>
-
-            <span style={{ overflow: "hidden", fontWeight: "bold" }}>
+            <span
+              style={{
+                overflow: "hidden",
+                fontWeight: "bold",
+                color: "rgb(255, 249, 64)",
+              }}
+            >
               {SITE.title}
+              <span
+                style={{
+                  position: "relative",
+                  fontSize: 40,
+                  right: 6,
+                  bottom: 9,
+                }}
+              >
+                &nbsp;.
+              </span>
             </span>
           </div>
         </div>

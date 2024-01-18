@@ -3,20 +3,15 @@ import { Resvg } from "@resvg/resvg-js";
 import { type CollectionEntry } from "astro:content";
 import postOgImage from "./og-templates/post";
 import siteOgImage from "./og-templates/site";
+import { readFileSync } from "fs";
 
 const fetchFonts = async () => {
-  // Regular Font
-  const fontFileRegular = await fetch(
-    "https://www.1001fonts.com/download/font/ibm-plex-mono.regular.ttf"
+  const fontRegular: ArrayBuffer = readFileSync(
+    "src/utils/satoriFont/Pretendard-Regular.otf"
   );
-  const fontRegular: ArrayBuffer = await fontFileRegular.arrayBuffer();
-
-  // Bold Font
-  const fontFileBold = await fetch(
-    "https://www.1001fonts.com/download/font/ibm-plex-mono.bold.ttf"
+  const fontBold: ArrayBuffer = readFileSync(
+    "src/utils/satoriFont/Pretendard-Bold.otf"
   );
-  const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
-
   return { fontRegular, fontBold };
 };
 
@@ -28,13 +23,13 @@ const options: SatoriOptions = {
   embedFont: true,
   fonts: [
     {
-      name: "IBM Plex Mono",
+      name: "Pretendard",
       data: fontRegular,
       weight: 400,
       style: "normal",
     },
     {
-      name: "IBM Plex Mono",
+      name: "Pretendard",
       data: fontBold,
       weight: 600,
       style: "normal",
