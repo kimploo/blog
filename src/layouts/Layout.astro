@@ -4,6 +4,7 @@ import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
 
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+const GA = import.meta.env.PUBLIC_GA;
 
 export interface Props {
   title?: string;
@@ -103,6 +104,20 @@ const socialImageURL = new URL(
           name="google-site-verification"
           content={googleSiteVerification}
         />
+      )
+    }
+    
+    {
+      // Google tag (gtag.js) 
+      GA && (
+        <script async src={GA}></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-FBK2C9F479');
+        </script>
       )
     }
 
