@@ -1,12 +1,13 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
+  website: "https://cosanam.com/", // replace this with your deployed domain
   author: "코사남 (Cosanam)",
   desc: "Cosanam dev log ",
   title: "Cosanam Dev Log",
   ogImage: "astropaper-og.jpg",
   postPerPage: 3,
+  lightAndDarkMode: false,
 };
 
 export const LOCALE = {
@@ -40,10 +41,10 @@ export const SOCIALS: SocialObjects = [
     linkTitle: `Send an email to ${SITE.title}`,
     active: false,
   },
-  {
-    name: "YouTube",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on YouTube`,
-    active: false,
-  },
+  // {
+  //   name: "YouTube",
+  //   href: "https://github.com/satnaing/astro-paper",
+  //   linkTitle: `${SITE.title} on YouTube`,
+  //   active: false,
+  // },
 ];
