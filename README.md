@@ -3,7 +3,8 @@
 ## TODO
 
 - [ ] Github Action CI/CD
-- [ ] OG 이미지 개선
+- [x] OG 이미지 개선
 - [ ] Giscus 적용
-- [ ] GA
+- [x] GA
 - [ ] 조회수 Tracking 고민
+- [ ] `<details>` 요소 컴포넌트
