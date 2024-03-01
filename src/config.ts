@@ -18,7 +18,7 @@ export const LOCALE = {
 export const LOGO_IMAGE = {
   enable: true,
   svg: false,
-  width: 150,
+  width: 140,
 };
 
 export const SOCIALS: SocialObjects = [
