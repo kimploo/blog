@@ -12,6 +12,8 @@ description: "JavaScript에서 이해하기 어려운 lexical에 대해서 집�
 
 ## Table Of Contents
 
+## Intro
+
 최근 좋은 기회로 ES6에 대해서 특강을 하게 되었는데, 이번에도 어김없이 이 질문을 받았다. "선생님, lexical this가 뭐에요? lexical environment가 뭐에요? lexical scope가 뭐에요?" 오늘 다룰 주제, lexical에 대한 질문이다. 엄밀히 말하면 lexical이란 개념과 ES6는 큰 연관이 없지만, 개발자를 준비하는 학생이 ES6를 배울 때 쯤 되면 JavaScript의 깊은 부분에 대해 고민을 하게 되기 때문에 이런 질문을 많이들 한다.
 
 나도 이런 고민을 상당히 깊게 오랬동안 했었고, 질문도 많이 받아서 이 기회에 아예 이 개념에 대해서 정리를 하면 좋겠다고 마음을 먹었다. "이미 인터넷에 좋은 글이 많고, 좋은 책에 정리가 되어있는데 왜 또 글을 쓰는지?" 라고 묻는 분들이 있을 수 있다. 맞다. lexical this, lexical environment, lexical scope 각각에 대해서는 이미 많은 분들이 좋은 글을 쓰셨다. 다만 영어를 좋아하는 나로서는 이 lexical이라는 단어 하나로 많은 것을 설명할 수 있지 않을까? lexical이라는 컨셉을 이해하면 더 쉽게 알 수 있지 않을까? 라는 생각을 했고, 이에 대한 나만의 결론을 내려보고자 한다.

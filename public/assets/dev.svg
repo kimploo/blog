@@ -4,8 +4,9 @@
 
 <defs>
 
-<style xmlns="http://www.w3.org/1999/xhtml">*, body, html { -webkit-font-smoothing: antialiased; }
-img, svg { max-width: 100%; }
+<style xmlns="http://www.w3.org/1999/xhtml">
+*, body, html { -webkit-font-smoothing: antialiased; }
+<!-- img, svg { max-width: 100%; } -->
 </style>
 
 </defs>
