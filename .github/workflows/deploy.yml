@@ -26,8 +26,12 @@ jobs:
           cache: 'pnpm'
           
       - name: Install dependencies
-        run: pnpm install
-      
+        run: |
+          pnpm install
+          pnpm build
+        env:
+          PUBLIC_GA: ${{ env.PUBLIC_GA }}  
+          
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
